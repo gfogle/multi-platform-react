@@ -4,7 +4,13 @@
   "description": "react on: web, ios, android, electron",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:electron": "node_modules/.bin/electron electron/index.electron.js",
+    "start:ios": "node_modules/react-native/packager/packager.sh",
+    "start:web": "NODE_ENV=development node_modules/.bin/webpack-dev-server --progress --colors  --content-base web/",
+    "start:android": "node_modules/react-native run-android",
+    "build:web": "NODE_ENV=production node_modules/.bin/webpack -p",
+    "build:ios": "react-native bundle --entry-file index.ios.js --bundle-output ios/main.jsbundle --platform ios --dev false",
+    "build:android": "node_modules/react-native bundle --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --platform android --dev false"
   },
   "repository": {
     "type": "git",
