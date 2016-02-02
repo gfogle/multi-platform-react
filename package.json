@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/gfogle/multi-platform-react/issues"
   },
-  "homepage": "https://github.com/gfogle/multi-platform-react#readme"
+  "homepage": "https://github.com/gfogle/multi-platform-react#readme",
+  "dependencies": {
+    "react-native": "^0.19.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^3.16.1"
+  }
 }
