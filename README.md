@@ -6,4 +6,4 @@ Sharing of React code across Web, iOS, Android, Electron as Hello World example
 Repo was created using `react-native init MultiPlatformReact` which initially
 created a folder named the same in the root project. That structure looked like:
 
-![Initial Project structure](https://github.com/gfogle/multi-platform-react/readme/initial-project.png)
+![Initial Project structure](https://github.com/gfogle/multi-platform-react/blob/master/readme/initial-project.png)
