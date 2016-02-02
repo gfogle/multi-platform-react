@@ -55,3 +55,8 @@ export default function () {
 	return Render.call(this, this.props, this.state);
 }
 ```
+
+### Web and Electron
+
+Each of the web and electron, which uses the web code, have their own file for
+the `index.html` and `index.electron.js` files.
