@@ -123,6 +123,10 @@ var config = {
 module.exports = config;
 ```
 
+When trying to run the electron version, make sure to run the webpack build to
+write the bundle.js file to the folder for electron to pickup. The webpack
+dev server doesn't currently do that with this configuration.
+
 ## [WEBPACK](http://webpack.github.io/)
 
 The project uses webpack for bundling the web code and webpack-dev-server for
