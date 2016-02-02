@@ -14,7 +14,9 @@ command run. The initial structure looked like:
 
 ### Moving things around
 
-To make the project a little easier to navigate (I hope), the files now reside
-like the following:
+To make the project a little easier to navigate (I hope). Ideally, the specific
+index files would be in their respective folders but there are issues where parts
+of the project expect them in the root, so they're all there for consistency.
+The files now reside at the following:
 
 ![Initial Project structure](https://github.com/gfogle/multi-platform-react/blob/master/readme/move-things.png)
