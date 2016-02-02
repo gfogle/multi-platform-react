@@ -1,0 +1,26 @@
+{
+  "name": "multi-platform-react",
+  "version": "1.0.0",
+  "description": "react on: web, ios, android, electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfogle/multi-platform-react.git"
+  },
+  "keywords": [
+    "react",
+    "react",
+    "native",
+    "electron",
+    "webpack"
+  ],
+  "author": "George Fogle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gfogle/multi-platform-react/issues"
+  },
+  "homepage": "https://github.com/gfogle/multi-platform-react#readme"
+}

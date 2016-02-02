@@ -31,3 +31,45 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# environment vars
+.env
+
+# OSX
+#
+.DS_Store
+ios/main.jsbundle
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IJ
+#
+.idea
+.gradle
+local.properties
+
+# webstorm
+.idea
+
+# distribution of web
+dist
+web/bundle.js
+web/bundle.js.map
