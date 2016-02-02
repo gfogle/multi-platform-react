@@ -1,6 +1,10 @@
 
 # multi-platform-react
-Sharing of React code across Web, iOS, Android, Electron as Hello World example
+
+Sharing of React code across Web, iOS, Android, Electron as Hello World example.
+Before you read on, just a quick shout out that there are a lot of web resources
+I used to build this out; I'm not a savant. I'll go back through my browser
+history at some point, its a scary place to be, and add shout outs.
 
 ## FOLDER STRUCTURE
 
@@ -27,7 +31,18 @@ The files now reside at the following:
 The goal of these components are that, to extent you can, keep react-native
 in the native files and react in the plain `.js` files. There's only a root
 component that imports a `root-render` function. The web / electron files
-pickup the standard `root-render.js` file. The base root file looks like:
+pickup the standard `root-render.js` file. So each component built is going to
+have 5 files. The root component has:
+
+```
+- root-render.android.js
+- root-render.ios.js
+- root-render.js
+- root-render.native.js
+- root.js
+```
+
+The base root file will pull in `root-render.js` and looks like:
 
 ```javascript
 'use strict';
@@ -44,8 +59,7 @@ export default class Root extends Component {
 ```
 
 but the iOS and Android platforms will look for the specific `root-render.ios.js`
-and `root-render.android.js` files, based on the platform, and both of those
-redirect to `root-render.native.js` and look like:
+and `root-render.android.js` files, based on the platform, and both of those look like:
 
 ```javascript
 'use strict';
@@ -55,6 +69,35 @@ import Render from './root-render.native';
 export default function () {
 	return Render.call(this, this.props, this.state);
 }
+```
+
+and redirect to the `root-render.native.js` file and look like:
+
+```javascript
+'use strict';
+
+import React, {
+	StyleSheet,
+	View,
+	Text
+} from 'react-native';
+
+export default function () {
+	return (
+		<View style={styles.container}>
+			<Text>Hello World</Text>
+		</View>
+	);
+}
+
+var styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		flexDirection: "column",
+		justifyContent: "center",
+		backgroundColor: "#303030"
+	}
+});
 ```
 
 ### Web and [ELECTRON](http://electron.atom.io/)
