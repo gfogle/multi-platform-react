@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/gfogle/multi-platform-react#readme",
   "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
     "react-native": "^0.19.0"
   },
   "devDependencies": {
